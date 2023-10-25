@@ -5,7 +5,7 @@ let nilai = parseFloat(prompt('Masukkan Nilai'));
 if (isNaN(nilai)) {
     alert("Nilai yang dimasukkan bukan angka.");
 } if (nilai < 0 || nilai > 100) {
-    alert("Nilai harus berada dalam rentang 0-99.");
+    alert("Nilai harus dari 0-99.");
 } else if (nilai < 66) {
     document.write(`<h1>Selamat kamu mendapatkan nilai F-</h1>`);
 } else if (nilai < 76) {
