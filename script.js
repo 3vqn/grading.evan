@@ -1,23 +1,48 @@
-let nama = prompt('Masukkan nama kamu!');
-document.write(`<h1>${nama}</h1>`);
-let nilai = parseFloat(prompt('Masukkan Nilai'));
+let namaKamu = prompt('Masukan nama anda.')
+document.write(`Atas nama ${namaKamu} <br>`)
+let lastGrade = parseFloat(prompt('Masukan nilai anda.'))
 
-if (isNaN(nilai)) {
-    alert("Nilai yang dimasukkan bukan angka.");
-} if (nilai < 0 || nilai > 100) {
-    alert("Nilai harus dari 0-99.");
-} else if (nilai < 66) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai F-</h1>`);
-} else if (nilai < 76) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai F</h1>`);
-} else if (nilai < 81) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai E</h1>`);
-} else if (nilai < 86) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai D</h1>`);
-} else if (nilai < 91) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai C</h1>`);
-} else if (nilai < 96) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai B</h1>`);
-} else if (nilai < 100) {
-    document.write(`<h1>Selamat kamu mendapatkan nilai A</h1>`);
+if (isNaN(lastGrade) || lastGrade < 0 || lastGrade > 100) {
+    alert("Masukan angka yang valid dan dalam rentang 0-99.");
+} else if (lastGrade >= 96) {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade A`);
+} else if (lastGrade >= 90) {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade B`);
+} else if (lastGrade >= 86) {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade C`);
+} else if (lastGrade >= 81) {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade D`);
+} else if (lastGrade >= 76) {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade E`);
+} else if (lastGrade >= 66) {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade F`);
+} else {
+    document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade F-`);
 }
+
+// COMPLICATED VER (KINDA)
+/*
+    let namaKamu = prompt('Masukan nama anda.')
+    document.write(`Atas nama ${namaKamu} <br>`)
+    let lastGrade = parseFloat(prompt('Masukan nilai anda.'))
+
+    if (isNaN(lastGrade)) {
+        alert("Masukan angka yang valid.");
+    } if (lastGrade < 0 || lastGrade > 100) {
+        alert("Nilai harus dari 0-99.");
+    } else if (lastGrade >= 96 && lastGrade <=99) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade A`);
+    } else if (lastGrade >= 90 && lastGrade <= 95) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade B`);
+    } else if (lastGrade >= 86 && lastGrade <= 90) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade C`);
+    } else if (lastGrade >= 81 && lastGrade <= 86) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade D`);
+    } else if (lastGrade >= 76 && lastGrade <= 81) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade E`);
+    } else if (lastGrade >= 66 && lastGrade <= 76) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade F`);
+    } else if (lastGrade >= 0 && lastGrade <= 66) {
+        document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade F-`);
+    }
+*/
