@@ -1,3 +1,6 @@
+let namaKamu = prompt('Masukan nama anda.')
+let lastGrade = parseFloat(prompt('Masukan nilai anda.'))
+
 if (isNaN(lastGrade) || lastGrade < 0 || lastGrade > 100) {
     alert("Masukan angka yang valid dan dalam rentang 0-99.");
 } else if (lastGrade >= 96) {
