@@ -1,22 +1,25 @@
-let namaKamu = prompt('Masukan nama anda.')
-document.write(`Atas nama ${namaKamu} <br>`)
-let lastGrade = parseFloat(prompt('Masukan nilai anda.'))
-
 if (isNaN(lastGrade) || lastGrade < 0 || lastGrade > 100) {
     alert("Masukan angka yang valid dan dalam rentang 0-99.");
 } else if (lastGrade >= 96) {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade A`);
 } else if (lastGrade >= 90) {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade B`);
 } else if (lastGrade >= 86) {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade C`);
 } else if (lastGrade >= 81) {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade D`);
 } else if (lastGrade >= 76) {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade E`);
 } else if (lastGrade >= 66) {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade F`);
 } else {
+    document.write(`Atas nama ${namaKamu} <br>`)
     document.write(`Selamat anda mendapatkan nilai ${lastGrade} Grade F-`);
 }
 
